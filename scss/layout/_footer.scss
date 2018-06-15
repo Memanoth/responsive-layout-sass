@@ -1,0 +1,77 @@
+.main-footer {
+    background-color: $color-primary-blue;
+    @media (min-width: $desktop) {
+        background-color: $color-transparent;
+    }
+    padding-top: 25px; 
+    strong {
+        color: darken($color-primary-grey, 30%);
+    }
+    .container {
+        background-color: $color-transparent;
+        @media (min-width: $tablet) {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+#main-footer-nav {
+    display: none;
+    @media (min-width: $tablet) {
+        display: flex;
+        list-style: none;
+        text-transform: uppercase;
+        a {
+            text-decoration: none;
+            color: $color-primary-grey;
+            padding: 10px 0px 10px 15px;
+            font-weight: 800;
+        }
+    }
+}
+
+#contact {
+    padding-bottom: 25px;
+    font-size: 0.9rem;
+    @media (min-width: $tablet) {
+        width: 70%;
+        font-size: 1rem;
+    }
+    @media (min-width: $desktop) {
+        width: 65%;
+        font-size: 1.1rem;
+    }
+}
+
+.section-title {
+    @extend %section-heading;
+}
+
+.footer-name {
+    @include font-properties($family: $font-secondary);
+	margin: 0;
+    padding: 10px 15px 10px 0;
+}
+
+.mobile-footer-nav {
+    @extend %flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    border-top: solid 1px $color-primary-grey;
+}
+
+#back-to-top {
+    list-style: none;
+    margin: 0;
+    a {
+        text-decoration: none;
+        color: $color-primary-grey;
+        padding: 10px 0px 10px 15px;
+        font-weight: 800;
+    }
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}

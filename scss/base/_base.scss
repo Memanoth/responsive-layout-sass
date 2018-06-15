@@ -1,0 +1,15 @@
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $color-primary-grey;
+	@media (min-width: $desktop) {
+		background-color: $color-primary-blue;
+	}
+}
+
+img {
+	width: 100%;
+}

@@ -1,0 +1,40 @@
+.main-nav {
+    @extend %flex;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 25px;
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: block;
+        margin: 2.5px 0;
+        padding: 10px 15px;
+        text-align: center;
+        background-color: $color-primary-grey;
+        color: $color-primary-blue;
+        font-weight: 800;
+        @media (min-width: $tablet) {
+            color: $color-primary-grey;
+            background-color: transparent;
+        }
+        @media (min-width: $desktop) {
+            padding-right: 7.5px;
+            text-align: right;
+        }
+    }
+    li {
+        list-style: none;
+        flex: 1 100%;
+        @media (min-width: $tablet) {
+            flex: 1;
+        }
+    }
+    @media (min-width: $tablet) {
+        justify-content: space-around;
+        width: 90%;
+    }
+    @media (min-width: $desktop) {
+        width: 50%;
+        margin: 20px 0 25px;
+    }
+}

@@ -1,0 +1,8 @@
+@mixin font-properties($family: $font-primary, $size: 0.85rem, $weight: 400, $color: $color-primary-grey, $height: 1.5, $alignment: center) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $height;
+    text-align: $alignment;
+}

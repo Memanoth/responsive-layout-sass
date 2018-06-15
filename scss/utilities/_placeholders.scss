@@ -1,0 +1,26 @@
+%section-heading {
+    padding: 25px 0;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+%flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+%properties-section-flex {
+    justify-content: center;
+    align-items: flex-start;
+    @media (min-width: $tablet) {
+        justify-content: flex-start;
+    }
+    .section-title {
+        @extend %section-heading;
+        color: $color-secondary-grey;
+        @media (min-width: $tablet) {
+            flex: 1 100%;
+        }
+    }
+}

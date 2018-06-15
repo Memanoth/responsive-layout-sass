@@ -1,0 +1,28 @@
+/* COLOURS */
+
+//Standard Colors
+$color-primary-grey: #efefef;
+$color-secondary-grey: #4e4e4e;
+$color-tertiary-grey: #6e6e6e;
+$color-primary-blue: rgba(0, 58, 119, 0.8);
+$color-secondary-blue: rgba(0, 58, 119, 1.0);
+$color-transparent: transparent;
+
+//Fonts
+
+$font-primary: 'Montserrat', 'sans-serif';
+$font-secondary: 'Fjalla One', 'sans-serif';
+
+
+// Container Widths
+$container-main: 90%;
+$width-max: 1150px;
+
+
+$portfolio-tablet: (100%/2);
+$portfolio-desktop: (100%/3);
+
+// Breakpoints
+
+$tablet: 768px;
+$desktop: 1024px;

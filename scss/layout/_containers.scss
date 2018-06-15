@@ -1,0 +1,13 @@
+.container {
+	@extend %flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $color-primary-grey;
+	width: $container-main;
+	margin: 0 auto;
+	max-width: $width-max;
+	@media (min-width: $desktop) {
+		width: $container-main + 5%;
+		padding: 0 2%;
+	}
+}

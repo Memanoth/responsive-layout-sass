@@ -1,0 +1,39 @@
+.portfolio-module {
+    margin-bottom: 40px;
+    p {
+        text-align: center;
+        color: $color-tertiary-grey;
+    }
+    h3 {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    @media (min-width: $tablet) {
+        width: $portfolio-tablet;
+        padding: 0 7.5px;
+    }
+    @media (min-width: $desktop) {
+        width: $portfolio-desktop;
+    }
+}
+
+#capability {
+    @extend %flex;
+    @extend %properties-section-flex;
+}
+
+#capability-container {
+    @media (min-width: $desktop) {
+        margin-top: 15px;
+    }
+}
+
+#portfolio {
+    @extend %flex;
+    @extend %properties-section-flex;
+    border-bottom: solid 1px $color-primary-blue;
+    @media (min-width: $desktop) {
+        border-bottom: none;
+    }
+}

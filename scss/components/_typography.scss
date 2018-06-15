@@ -1,0 +1,15 @@
+body {
+	@include font-properties();
+	text-align: center;
+}
+
+h2 {
+	@include font-properties();
+	text-align: center;
+}
+
+h3 {
+	@include font-properties($family: $font-secondary, $color: $color-secondary-grey);
+	margin: 0;
+}
+
